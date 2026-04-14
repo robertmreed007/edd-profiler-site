@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 72" fill="none">
+  <!-- Shield icon -->
+  <path d="M32 8 L52 14 L52 34 C52 46 42 54 32 58 C22 54 12 46 12 34 L12 14 Z"
+    fill="white" fill-opacity="0.08" stroke="#0FB8B0" stroke-width="1.5"/>
+
+  <!-- Magnifying glass circle inside shield -->
+  <circle cx="32" cy="30" r="9" stroke="#0FB8B0" stroke-width="2" fill="none"/>
+
+  <!-- Magnifying glass handle -->
+  <line x1="38.5" y1="37.5" x2="44" y2="43" stroke="#0FB8B0" stroke-width="2.5" stroke-linecap="round"/>
+
+  <!-- Teal accent line at bottom of shield -->
+  <path d="M22 50 C25 53 29 55.5 32 57 C35 55.5 39 53 42 50"
+    stroke="#0FB8B0" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+
+  <!-- Wordmark: EDD -->
+  <text x="64" y="36"
+    font-family="Inter, DM Sans, system-ui, sans-serif"
+    font-size="28"
+    font-weight="800"
+    letter-spacing="-0.5"
+    fill="white">EDD</text>
+
+  <!-- Wordmark: PROFILER -->
+  <text x="65" y="51"
+    font-family="Inter, DM Sans, system-ui, sans-serif"
+    font-size="13"
+    font-weight="400"
+    letter-spacing="4"
+    fill="#0FB8B0">PROFILER</text>
+</svg>
