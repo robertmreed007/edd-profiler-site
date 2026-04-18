@@ -70,9 +70,9 @@ export default function ROI() {
         </div>
 
         {/* Stat callouts */}
-        <div className="grid grid-cols-3 gap-8 mt-16 pt-16 border-t border-gray-100">
+        <div className="grid grid-cols-3 gap-12 mt-16 pt-16 border-t border-gray-100">
           <div className="text-center">
-            <div className="text-4xl md:text-5xl font-extrabold text-navy-900">
+            <div className="text-3xl md:text-4xl font-extrabold text-navy-900">
               Minutes
             </div>
             <p className="mt-2 text-sm text-gray-500">
@@ -80,15 +80,15 @@ export default function ROI() {
             </p>
           </div>
           <div className="text-center">
-            <div className="text-4xl md:text-5xl font-extrabold text-navy-900">
-              100%
+            <div className="text-3xl md:text-4xl font-extrabold text-navy-900">
+              Repeatable
             </div>
             <p className="mt-2 text-sm text-gray-500">
-              Consistent review quality
+              Same rigor, every customer, every time
             </p>
           </div>
           <div className="text-center">
-            <div className="text-4xl md:text-5xl font-extrabold text-accent-600">
+            <div className="text-3xl md:text-4xl font-extrabold text-accent-600">
               Examiner-Ready
             </div>
             <p className="mt-2 text-sm text-gray-500">
