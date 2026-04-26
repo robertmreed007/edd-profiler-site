@@ -54,14 +54,14 @@ export default function Header() {
             </Link>
           ))}
           <Link
-            href="/contact"
+            href="/pricing"
             className={`text-sm font-semibold px-5 py-2.5 rounded-lg transition-all ${
               scrolled
                 ? 'bg-navy-900 text-white hover:bg-navy-800'
                 : 'bg-accent-500 text-white hover:bg-accent-600'
             }`}
           >
-            Contact Sales
+            Pricing
           </Link>
         </nav>
 
@@ -94,11 +94,11 @@ export default function Header() {
               </Link>
             ))}
             <Link
-              href="/contact"
+              href="/pricing"
               className="text-sm font-semibold px-5 py-2.5 rounded-lg bg-navy-900 text-white text-center hover:bg-navy-800"
               onClick={() => setMobileOpen(false)}
             >
-              Contact Sales
+              Pricing
             </Link>
           </nav>
         </div>

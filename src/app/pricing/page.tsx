@@ -1,7 +1,10 @@
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-import Link from 'next/link';
-import { Check } from 'lucide-react';
+import { Check, Mail } from 'lucide-react';
+
+const SALES_EMAIL = 'sales@eddprofiler.com';
+const mailto = (subject: string) =>
+  `mailto:${SALES_EMAIL}?subject=${encodeURIComponent(subject)}`;
 
 const tiers = [
   {
@@ -18,6 +21,7 @@ const tiers = [
       'Email support',
     ],
     cta: 'Request Demo',
+    ctaHref: mailto('Demo request — Community plan'),
     highlighted: false,
   },
   {
@@ -36,6 +40,7 @@ const tiers = [
       'Bulk report generation',
     ],
     cta: 'Request Demo',
+    ctaHref: mailto('Demo request — Enterprise plan'),
     highlighted: true,
   },
   {
@@ -54,6 +59,7 @@ const tiers = [
       'Source code escrow',
     ],
     cta: 'Contact Sales',
+    ctaHref: mailto('Sales inquiry — On-Premise plan'),
     highlighted: false,
   },
 ];
@@ -127,8 +133,8 @@ export default function PricingPage() {
                     ))}
                   </div>
 
-                  <Link
-                    href="/contact"
+                  <a
+                    href={tier.ctaHref}
                     className={`text-center px-6 py-3 rounded-lg font-semibold text-sm transition-all ${
                       tier.highlighted
                         ? 'bg-accent-500 text-white hover:bg-accent-600'
@@ -136,26 +142,33 @@ export default function PricingPage() {
                     }`}
                   >
                     {tier.cta}
-                  </Link>
+                  </a>
                 </div>
               ))}
             </div>
 
-            {/* FAQ-style note */}
-            <div className="mt-16 text-center">
+            {/* Sales contact callout */}
+            <div className="mt-16 max-w-2xl mx-auto">
+              <div className="bg-white rounded-2xl border border-gray-200 p-8 text-center shadow-soft">
+                <Mail className="w-6 h-6 text-accent-500 mx-auto mb-3" />
+                <h3 className="font-bold text-navy-900 mb-2">Talk to sales</h3>
+                <p className="text-sm text-gray-500 mb-4">
+                  Custom configuration, volume pricing, or implementation
+                  questions? Reach our team directly.
+                </p>
+                <a
+                  href={mailto('Sales inquiry')}
+                  className="inline-block text-accent-600 hover:text-accent-500 font-medium"
+                >
+                  {SALES_EMAIL}
+                </a>
+              </div>
+            </div>
+
+            <div className="mt-12 text-center">
               <p className="text-gray-500">
                 All plans include bank-grade encryption, audit trails, and
                 regulatory-aligned output formats.
-              </p>
-              <p className="text-gray-400 text-sm mt-2">
-                Need a custom configuration?{' '}
-                <Link
-                  href="/contact"
-                  className="text-accent-600 hover:text-accent-500 font-medium"
-                >
-                  Contact our team
-                </Link>
-                .
               </p>
             </div>
           </div>

@@ -1,6 +1,7 @@
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-import { Mail, Building2, Shield } from 'lucide-react';
+import Link from 'next/link';
+import { Mail, Tag, Shield } from 'lucide-react';
 
 export default function ContactPage() {
   return (
@@ -17,12 +18,18 @@ export default function ContactPage() {
               Contact
             </span>
             <h1 className="text-4xl md:text-5xl font-extrabold text-white mt-4">
-              Request a demo
+              Get in touch
             </h1>
             <p className="mt-4 text-lg text-navy-200 max-w-2xl mx-auto">
-              See how EDD Profiler can automate your enhanced due diligence
-              process. Fill out the form and we will schedule a personalized
-              walkthrough.
+              Have a question about EDD Profiler? Send us a note and we&rsquo;ll
+              get back to you shortly. Looking for pricing or a demo?{' '}
+              <Link
+                href="/pricing"
+                className="text-accent-400 hover:text-accent-300 font-medium underline-offset-2 hover:underline"
+              >
+                See our plans
+              </Link>
+              .
             </p>
           </div>
         </section>
@@ -114,20 +121,29 @@ export default function ContactPage() {
               <div className="lg:col-span-2 space-y-6">
                 <div className="bg-white rounded-2xl border border-gray-200 p-6">
                   <Mail className="w-6 h-6 text-accent-500 mb-3" />
-                  <h3 className="font-bold text-navy-900 mb-1">Email Us</h3>
-                  <p className="text-sm text-gray-500">
-                    sales@eddprofiler.com
-                  </p>
+                  <h3 className="font-bold text-navy-900 mb-1">General Inquiries</h3>
+                  <a
+                    href="mailto:info@eddprofiler.com"
+                    className="text-sm text-gray-500 hover:text-accent-600 transition-colors"
+                  >
+                    info@eddprofiler.com
+                  </a>
                 </div>
 
                 <div className="bg-white rounded-2xl border border-gray-200 p-6">
-                  <Building2 className="w-6 h-6 text-accent-500 mb-3" />
+                  <Tag className="w-6 h-6 text-accent-500 mb-3" />
                   <h3 className="font-bold text-navy-900 mb-1">
-                    Enterprise Sales
+                    Pricing &amp; Sales
                   </h3>
                   <p className="text-sm text-gray-500">
-                    For institutions with 1,000+ customers or on-premise
-                    requirements, we offer dedicated implementation support.
+                    Looking for plan details, custom configurations, or a
+                    demo?{' '}
+                    <Link
+                      href="/pricing"
+                      className="text-accent-600 hover:text-accent-500 font-medium"
+                    >
+                      View pricing →
+                    </Link>
                   </p>
                 </div>
 

@@ -28,10 +28,10 @@ export default function Hero() {
 
         <div className="animate-fade-up-delay-3 mt-12 flex flex-col sm:flex-row items-center justify-center gap-4">
           <a
-            href="/contact"
+            href="/pricing"
             className="group inline-flex items-center gap-2 bg-accent-500 text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-accent-600 hover:shadow-glow transition-all hover:scale-[1.02]"
           >
-            Contact Sales
+            View Pricing
             <svg
               className="w-4 h-4 transition-transform group-hover:translate-x-1"
               fill="none"
