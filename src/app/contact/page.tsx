@@ -1,5 +1,6 @@
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import ContactForm from '@/components/ContactForm';
 import Link from 'next/link';
 import { Mail, Tag, Shield } from 'lucide-react';
 
@@ -40,81 +41,7 @@ export default function ContactPage() {
             <div className="grid lg:grid-cols-5 gap-12">
               {/* Form */}
               <div className="lg:col-span-3">
-                <div className="bg-white rounded-2xl border border-gray-200 p-8 shadow-soft">
-                  <form className="space-y-6">
-                    <div className="grid sm:grid-cols-2 gap-6">
-                      <div>
-                        <label
-                          htmlFor="name"
-                          className="block text-sm font-medium text-gray-700 mb-2"
-                        >
-                          Full Name
-                        </label>
-                        <input
-                          type="text"
-                          id="name"
-                          name="name"
-                          className="w-full px-4 py-3 rounded-lg border border-gray-200 text-gray-900 text-sm focus:border-accent-500 focus:ring-1 focus:ring-accent-500 outline-none transition-colors"
-                          placeholder="Jane Smith"
-                        />
-                      </div>
-                      <div>
-                        <label
-                          htmlFor="email"
-                          className="block text-sm font-medium text-gray-700 mb-2"
-                        >
-                          Work Email
-                        </label>
-                        <input
-                          type="email"
-                          id="email"
-                          name="email"
-                          className="w-full px-4 py-3 rounded-lg border border-gray-200 text-gray-900 text-sm focus:border-accent-500 focus:ring-1 focus:ring-accent-500 outline-none transition-colors"
-                          placeholder="jane@yourbank.com"
-                        />
-                      </div>
-                    </div>
-
-                    <div>
-                      <label
-                        htmlFor="institution"
-                        className="block text-sm font-medium text-gray-700 mb-2"
-                      >
-                        Institution Name
-                      </label>
-                      <input
-                        type="text"
-                        id="institution"
-                        name="institution"
-                        className="w-full px-4 py-3 rounded-lg border border-gray-200 text-gray-900 text-sm focus:border-accent-500 focus:ring-1 focus:ring-accent-500 outline-none transition-colors"
-                        placeholder="First National Bank"
-                      />
-                    </div>
-
-                    <div>
-                      <label
-                        htmlFor="message"
-                        className="block text-sm font-medium text-gray-700 mb-2"
-                      >
-                        Message
-                      </label>
-                      <textarea
-                        id="message"
-                        name="message"
-                        rows={5}
-                        className="w-full px-4 py-3 rounded-lg border border-gray-200 text-gray-900 text-sm focus:border-accent-500 focus:ring-1 focus:ring-accent-500 outline-none transition-colors resize-none"
-                        placeholder="Tell us about your EDD process and what you're looking to improve..."
-                      />
-                    </div>
-
-                    <button
-                      type="submit"
-                      className="w-full bg-accent-500 text-white px-6 py-3 rounded-lg font-semibold hover:bg-accent-600 transition-colors"
-                    >
-                      Submit Request
-                    </button>
-                  </form>
-                </div>
+                <ContactForm />
               </div>
 
               {/* Info sidebar */}
