@@ -10,7 +10,7 @@ import {
 const features = [
   {
     icon: BarChart3,
-    title: 'YH-Compatible Risk Scoring',
+    title: 'Multi-Dimensional Risk Scoring',
     description:
       '4-dimension weighted risk model: Customer Type, Products, Geography, and Transactions. Score 0-100 with configurable thresholds for EDD triggers.',
   },

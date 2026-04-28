@@ -14,7 +14,7 @@ const steps = [
     number: '02',
     title: 'Analyze',
     description:
-      'AI scores every customer using a YellowHammer-compatible risk model',
+      'AI scores every customer using a multi-dimensional, configurable risk model',
     detail:
       'Runs negative news searches with AML-specific keyword queries. Flags CTR thresholds, structuring patterns ($8K-$10K), cash-intensive activity, and volume deviations. Scores across Customer Type, Products, Geography, and Transactions.',
   },

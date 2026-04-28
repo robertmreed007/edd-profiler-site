@@ -15,7 +15,7 @@ const tiers = [
     features: [
       'Up to 500 customers monitored',
       'Quarterly EDD review cycles',
-      'YellowHammer-compatible risk scoring',
+      'Multi-dimensional risk scoring',
       'Automated adverse media screening',
       'Examiner-ready PDF reports',
       'Email support',
